@@ -12,9 +12,9 @@ def init(Map map, File f) {
     map.each { key, value -> f.append("$key\t${value.join("\t")}\n") }
 }
 
-File projects = new File("Projekty.txt");
-File largeProjects = new File("ProjektyDuze.txt");
-File developers = new File("Programisci.txt");
+File projects = new File("Projekty.txt")
+File largeProjects = new File("ProjektyDuze.txt")
+File developers = new File("Programisci.txt")
 
 init(pmap, projects);
 largeProjects.write("")
